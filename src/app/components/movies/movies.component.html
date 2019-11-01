@@ -1,0 +1,22 @@
+<div class="movies">
+    <h1>Peliculas</h1>
+</div>
+
+<div class="container" *ngFor="let item of m" >
+    <div class="if" *ngIf="item.Available" >
+        <img  [src]="item.Poster" >
+        
+        <div class="title">
+            <h1> {{ item.Title }} </h1>
+        </div>
+        <div class="info">
+            <div> {{ item.Genre }} </div>
+            <br>
+            <br>
+            <br>
+            <div> {{ item.Language }} </div>
+        </div>
+    </div>
+
+</div>
+

@@ -6,12 +6,22 @@ import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment.prod';
 import { AngularFireModule } from 'angularfire2';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { MoviesComponent } from './components/movies/movies.component';
+import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HeroComponent,
+    MoviesComponent,
+    ComingSoonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
