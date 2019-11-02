@@ -11,6 +11,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { HomeComponent } from './components/home/home.component';
+import { MovieXComponent } from './components/movie-x/movie-x.component';
 
 
 
@@ -21,7 +22,8 @@ import { HomeComponent } from './components/home/home.component';
     HeroComponent,
     MoviesComponent,
     ComingSoonComponent,
-    HomeComponent
+    HomeComponent,
+    MovieXComponent
   ],
   imports: [
     BrowserModule,

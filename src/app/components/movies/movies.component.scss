@@ -62,3 +62,21 @@ img{
     height: 70vh;
     justify-content: space-around;
 }
+.router{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45vh;
+    width: 100vw;
+    background: rgb(35, 59, 104);
+    color:white;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    
+    
+}
+.router:hover{
+    height: 70vh;
+    justify-content: space-around;
+}
+
