@@ -7,7 +7,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "./dist/microproyecto2",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
