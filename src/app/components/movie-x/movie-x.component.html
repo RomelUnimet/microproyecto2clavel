@@ -1,11 +1,11 @@
-<app-navbar></app-navbar>
 
 <div class="for" *ngFor="let item of m">
     <div class="if" *ngIf="isMovie(item.Title)">
 
         <div class="top">
             <div class="title"> <h1> {{item.Title}} </h1> </div>
-            <div class="reserva"><h4>Reservar</h4></div>
+            <div class="reserva" (click)="onSelect(item.Title)" *ngIf="item.Available" ><h4>Reservar</h4></div>
+            <div class="reserva" *ngIf="item.ComingSoon" > <p>Proximamente:  </p> <p> {{item.Released}} </p> </div>
         </div>
         
         <div class="datos">

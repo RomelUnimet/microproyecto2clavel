@@ -27,6 +27,7 @@
     
     <div class="container" *ngFor="let item of m" >
         <div class="if" *ngIf="item.ComingSoon" >
+        <div class="router" (click)="onSelect(item.Title)">
             <img  [src]="item.Poster" >
             
             <div class="title">
@@ -39,6 +40,7 @@
                 <br>
                 <div> {{ item.Language }} </div>
             </div>
+        </div>
         </div>
     
     </div>

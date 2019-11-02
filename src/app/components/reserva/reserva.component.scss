@@ -1,0 +1,45 @@
+.banner{
+    padding-top:7vh ;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background: rgb(35, 59, 104);
+    color: white;
+}
+.banner h1{
+    padding-top:7vh ;
+
+}
+.fondo{
+    height: 63vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(98, 111, 136);
+}
+.reserva{
+    height: 50vh;
+    width: 70vw;
+    background: #e3ded5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgb(2, 22, 58);
+    color:white;
+    
+}
+.submit:hover{
+    background: rgb(19, 64, 148);
+}

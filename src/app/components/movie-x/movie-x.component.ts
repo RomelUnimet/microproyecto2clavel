@@ -10,7 +10,7 @@ import { MoviesService } from 'src/app/services/movies.service';
 export class MovieXComponent implements OnInit {
 
   public movieTitle;
-  
+
   public m:any[];
 
   constructor(private route: ActivatedRoute,public movie :MoviesService , private router:Router) { 
@@ -31,6 +31,12 @@ export class MovieXComponent implements OnInit {
       isMovie=true;
     }
     return isMovie;
+
+  }
+
+  onSelect(title:string){
+    console.log(title);
+    this.router.navigate( ['/reserva', title ] )
 
   }
 

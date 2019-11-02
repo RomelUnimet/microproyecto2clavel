@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from  '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,10 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { HomeComponent } from './components/home/home.component';
 import { MovieXComponent } from './components/movie-x/movie-x.component';
+import { ReservaComponent } from './components/reserva/reserva.component';
+import {ReserveService} from './services/reserve.service'
+import {MoviesService} from './services/movies.service';
+import { AdminComponent } from './components/admin/admin.component'
 
 
 
@@ -23,15 +28,19 @@ import { MovieXComponent } from './components/movie-x/movie-x.component';
     MoviesComponent,
     ComingSoonComponent,
     HomeComponent,
-    MovieXComponent
+    MovieXComponent,
+    ReservaComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase,'angularfs'),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ReserveService,MoviesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
