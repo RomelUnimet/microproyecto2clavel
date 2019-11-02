@@ -1,0 +1,47 @@
+
+<div class="for" *ngFor="let item of m">
+    <div class="if" *ngIf="isMovie(item.Title)">
+
+        <div class="top">
+            <div class="title"> <h1> {{item.Title}} </h1> </div>
+            <div class="reserva" (click)="onSelect(item.Title)" *ngIf="item.Available" ><h4>Reservar</h4></div>
+            <div class="reserva" *ngIf="item.ComingSoon" > <p>Proximamente:  </p> <p> {{item.Released}} </p> </div>
+        </div>
+        
+        <div class="datos">
+            <div class="texto">
+
+                <div> Sinapsis: {{ item.Plot }} </div>
+                <br>
+                <div> Año: {{ item.Year }} </div>
+                <br>
+                <div> Duracion: {{ item.Runtime }} </div>
+                <br>
+                <div> Generos: {{ item.Genre }} </div>
+                <br>
+                <div> Director: {{ item.Director }}  </div>
+                <br>
+                <div> Actores Principales: {{ item.Actors }} </div>
+                <br>
+                <div> Premios: {{ item.Awards }} </div>
+                
+
+            </div>
+            <img [src]="item.Poster" alt="">
+
+            <br>
+            <br>
+        </div>  
+
+        <div class="fotos">
+            <img [src]="item.Images[0] " alt="">
+            <img [src]="item.Images[1] " alt="">
+            <img [src]="item.Images[2] " alt="">
+            <img [src]="item.Images[3] " alt="">
+            <img [src]="item.Images[4] " alt="">
+            
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,65 @@
+
+.for{
+    margin-top: 7vh;
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 100vw;
+    background: rgb(35, 59, 104);
+}
+.datos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    background: rgb(98, 111, 136);
+   
+
+}
+.datos img{
+    height:50vh;
+    padding-right: 15vw ;
+    
+}
+.datos .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:50vw;
+    padding-left: 15vw;
+    padding-right: 10vw;
+    font-size: 16px;
+}
+.fotos{
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    background: rgb(35, 59, 104);
+
+
+}
+.fotos img{
+    height: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgb(2, 22, 58);
+    
+}
+.reserva:hover{
+    background: rgb(19, 64, 148);
+}

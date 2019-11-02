@@ -1,0 +1,47 @@
+<div class="movies">
+    <h1>Peliculas</h1>
+</div>
+
+<div class="container" *ngFor="let item of m" >
+    <div class="if" *ngIf="item.Available" >
+        <div class="router" (click)="onSelect(item.Title)">
+            <img  [src]="item.Poster" >
+            
+            <div class="title">
+                <h1> {{ item.Title }} </h1>
+            </div>
+            <div class="info">
+                <div> {{ item.Genre }} </div>
+                <br>
+                <br>
+                <br>
+                <div> {{ item.Language }} </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+<div class="movies">
+        <h1>Coming Soon</h1>
+    </div>
+    
+    <div class="container" *ngFor="let item of m" >
+        <div class="if" *ngIf="item.ComingSoon" >
+        <div class="router" (click)="onSelect(item.Title)">
+            <img  [src]="item.Poster" >
+            
+            <div class="title">
+                <h1> {{ item.Title }} </h1>
+            </div>
+            <div class="info">
+                <div> {{ item.Genre }} </div>
+                <br>
+                <br>
+                <br>
+                <div> {{ item.Language }} </div>
+            </div>
+        </div>
+        </div>
+    
+    </div>
+
